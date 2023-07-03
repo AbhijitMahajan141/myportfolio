@@ -52,8 +52,8 @@ const Experience = () => {
         <p className={styles.sectionSubText}>What I have done so far...</p>
         <p className={styles.sectionHeadText}>Work Experience.</p>
         Well as a fresher i currently don't have any professional experience but
-        please do check my projects that i have built using my knowledge in
-        Languages and frameworks below. <br />
+        please do checkout my projects that i built using my knowledge in
+        Languages and frameworks mentioned below. <br />
         But if i were to have any experience in the future the section would
         look as below.
       </motion.div>
