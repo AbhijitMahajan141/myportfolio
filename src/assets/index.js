@@ -20,6 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import android from "./tech/android.png";
+import java from "./tech/java.png";
+import mysql from "./tech/mysql.svg";
+import solidity from "./tech/Solidity.png";
+
+import linkedin from "./tech/linkedin.png";
+import resume from "./tech/resume.png";
 
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -37,11 +44,11 @@ export {
   github,
   menu,
   close,
+  html,
   css,
   docker,
   figma,
   git,
-  html,
   javascript,
   mongodb,
   nodejs,
@@ -50,9 +57,15 @@ export {
   tailwind,
   typescript,
   threejs,
+  android,
+  java,
+  mysql,
+  solidity,
   starbucks,
   tesla,
   chatup,
   sociogram,
   carrent,
+  linkedin,
+  resume,
 };

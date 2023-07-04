@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
+import { github, resume, linkedin } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto flex flex-col items-center justify-center">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -22,8 +22,59 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
-
+      <div className="z-[1] flex flex-row items-center justify-center gap-12 h-[50%] w-[50%] mt-[200px]">
+        <motion.div
+          className="bg-green-200 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          // whileHover={{ scale: 1 }}
+          animate={{
+            scale: [1, 1.1, 1.2, 1.1, 1],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          <a href="../assets/resume/Abhijit_Mahajan_resume.pdf" download>
+            <img src={resume} alt="resume" width={60} height={60} />
+          </a>
+        </motion.div>
+        <motion.div
+          className="bg-black p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          // whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.1, 1.2, 1.1, 1],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          <a href="https://github.com/AbhijitMahajan141/" target="_blank">
+            <img src={github} alt="github" width={60} height={60} />
+          </a>
+        </motion.div>
+        <motion.div
+          className="bg-blue-300 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          // whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: [1, 1.1, 1.2, 1.1, 1],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          <a
+            href="https://www.linkedin.com/in/abhijit-mahajan-348a281bb/"
+            target="_blank"
+          >
+            <img src={linkedin} alt="linkedin" width={60} height={60} />
+          </a>
+        </motion.div>
+      </div>
       <div className="absolute xs:bottom-10 w-full h-0 flex justify-center items-center">
         <a href="#about">
           <div className="w-[32px] h-[54px] rounded-2xl border-4 border-secondary flex justify-center items-start p-2">
