@@ -22,9 +22,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="z-[1] flex flex-row items-center justify-center gap-12 h-[50%] w-[50%] mt-[200px]">
+      <div className="z-[1] flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 h-[50%] w-[50%] mt-[200px] sm:w-[90%] sm:h-[80%] md:w-[50%] md:h-[50%]">
         <motion.div
-          className="bg-green-200 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          className="bg-green-200 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50 sm:p-6"
           // whileHover={{ scale: 1 }}
           animate={{
             scale: [1, 1.1, 1.2, 1.1, 1],
@@ -36,11 +36,17 @@ const Hero = () => {
           }}
         >
           <a href="../assets/resume/Abhijit_Mahajan_resume.pdf" download>
-            <img src={resume} alt="resume" width={60} height={60} />
+            <img
+              src={resume}
+              alt="resume"
+              width={40}
+              height={40}
+              className="sm:w-[100px]"
+            />
           </a>
         </motion.div>
         <motion.div
-          className="bg-black p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          className="bg-black p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50 sm:p-6"
           // whileHover={{ scale: 1.1 }}
           animate={{
             scale: [1, 1.1, 1.2, 1.1, 1],
@@ -52,11 +58,17 @@ const Hero = () => {
           }}
         >
           <a href="https://github.com/AbhijitMahajan141/" target="_blank">
-            <img src={github} alt="github" width={60} height={60} />
+            <img
+              src={github}
+              alt="github"
+              width={40}
+              height={40}
+              className="sm:w-[100px]"
+            />
           </a>
         </motion.div>
         <motion.div
-          className="bg-blue-300 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50"
+          className="bg-blue-300 p-4 rounded-full cursor-pointer shadow-2xl shadow-indigo-500/50 sm:p-6"
           // whileHover={{ scale: 1.1 }}
           animate={{
             scale: [1, 1.1, 1.2, 1.1, 1],
@@ -71,11 +83,17 @@ const Hero = () => {
             href="https://www.linkedin.com/in/abhijit-mahajan-348a281bb/"
             target="_blank"
           >
-            <img src={linkedin} alt="linkedin" width={60} height={60} />
+            <img
+              src={linkedin}
+              alt="linkedin"
+              width={40}
+              height={40}
+              className="sm:w-[100px]"
+            />
           </a>
         </motion.div>
       </div>
-      <div className="absolute xs:bottom-10 w-full h-0 flex justify-center items-center">
+      <div className=" xs:bottom-10 w-full h-0 flex justify-center items-center">
         <a href="#about">
           <div className="w-[32px] h-[54px] rounded-2xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xs:ml-[0px] xs:mr-[0px] sm:ml-[20px] sm:mr-[20px] md:ml-[50px] md:mr-[50px] ml-[150px] mr-[150px]">
+    <div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl "
