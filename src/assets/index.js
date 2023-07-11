@@ -35,6 +35,7 @@ import chatup from "./Chatup.png";
 import sociogram from "./sociogram.png";
 import carrent from "./carrent.png";
 
+import heroBg from "./herobg.png";
 export {
   logo,
   backend,
@@ -68,4 +69,5 @@ export {
   carrent,
   linkedin,
   resume,
+  heroBg,
 };
