@@ -35,7 +35,10 @@ const Hero = () => {
             repeatType: "loop",
           }}
         >
-          <a href="../assets/resume/Abhijit_Mahajan_resume.pdf" download>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1HSzuq21-i7vntGSgk4S30xLrPKPusKAT"
+            download
+          >
             <img
               src={resume}
               alt="resume"
