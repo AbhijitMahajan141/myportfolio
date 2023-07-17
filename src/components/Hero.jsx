@@ -36,7 +36,7 @@ const Hero = () => {
           }}
         >
           <a
-            href="https://drive.google.com/uc?export=download&id=1rIY3i2fHbzcOlOxe5H1wQ7YXW5TJTxKJ"
+            href="https://drive.google.com/uc?export=download&id=1SMMTo-qTCzuU8wTHnKiiiyEZhYcAjcSY"
             download
           >
             <img
