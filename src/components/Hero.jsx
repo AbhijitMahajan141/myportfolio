@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { github, resume, linkedin } from "../assets";
+import { github, resume, linkedin, heroBg } from "../assets";
 
-const Hero = () => {
+const Hero = ({ isMobile }) => {
   return (
     <section className="relative w-full h-screen mx-auto flex flex-col items-center justify-center">
       <div
@@ -111,6 +111,15 @@ const Hero = () => {
           </div>
         </a>
       </div>
+      {isMobile && (
+        <div>
+          <img
+            src={heroBg}
+            alt="heroBackground"
+            className="w-full h-full absolute inset-0 z-[-1]"
+          />
+        </div>
+      )}
     </section>
   );
 };

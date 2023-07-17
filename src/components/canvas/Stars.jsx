@@ -1,35 +1,17 @@
-import React, { useState, useRef, Suspense, useEffect } from "react";
+import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
-import herobg from "../../assets/herobg.png";
+import { heroBg } from "../../assets";
 
 const Stars = (props) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:500px)");
-
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
-
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(isMobile ? 500 : 5000), {
-      radius: isMobile ? 0.6 : 1.4,
+    random.inSphere(new Float32Array(5000), {
+      radius: 1.4,
     })
   );
-
+  //500 - 0.6
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
@@ -57,7 +39,7 @@ const StarsCanvas = () => {
         <Suspense
           fallback={
             <>
-              <img src={herobg} alt="Background" className="h-full" />
+              <img src={heroBg} alt="Background" className="h-full" />
             </>
           }
         >
