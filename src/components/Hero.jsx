@@ -30,13 +30,13 @@ const Hero = ({ isMobile }) => {
             scale: [1, 1.1, 1.2, 1.1, 1],
           }}
           transition={{
-            duration: 2.5,
+            duration: 7,
             repeat: Infinity,
             repeatType: "loop",
           }}
         >
           <a
-            href="https://drive.google.com/uc?export=download&id=1SMMTo-qTCzuU8wTHnKiiiyEZhYcAjcSY"
+            href="https://drive.google.com/uc?export=download&id=1T7WrC3fuE-q2vTKpq1JVgr5iFbC-OY1h"
             download
           >
             <img
@@ -55,7 +55,7 @@ const Hero = ({ isMobile }) => {
             scale: [1, 1.1, 1.2, 1.1, 1],
           }}
           transition={{
-            duration: 2.5,
+            duration: 7,
             repeat: Infinity,
             repeatType: "loop",
           }}
@@ -77,7 +77,7 @@ const Hero = ({ isMobile }) => {
             scale: [1, 1.1, 1.2, 1.1, 1],
           }}
           transition={{
-            duration: 2.5,
+            duration: 7,
             repeat: Infinity,
             repeatType: "loop",
           }}

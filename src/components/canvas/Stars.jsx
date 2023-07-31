@@ -7,8 +7,8 @@ import { heroBg } from "../../assets";
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), {
-      radius: 1.4,
+    random.inSphere(new Float32Array(2000), {
+      radius: 0.8,
     })
   );
   //500 - 0.6
@@ -22,7 +22,7 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#f272c8"
+          color="purple"
           size={0.003}
           sizeAttenuation={true}
           depthWrite={false}
