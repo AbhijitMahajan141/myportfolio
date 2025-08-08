@@ -36,7 +36,7 @@ const Hero = ({ isMobile }) => {
           }}
         >
           <a
-            href="https://drive.google.com/uc?export=download&id=1T7WrC3fuE-q2vTKpq1JVgr5iFbC-OY1h"
+            href="https://drive.google.com/uc?export=download&id=1UVY1o7CsaylRM8hgo86ElWUgZD_6jURW"
             download
           >
             <img

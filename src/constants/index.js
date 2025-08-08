@@ -15,7 +15,7 @@ import {
   android,
   java,
   solidity,
-  starbucks,
+  jio,
   tesla,
   chatup,
   sociogram,
@@ -116,20 +116,20 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer",
+    company_name: "JIO Platforms Limited",
+    icon: jio,
     iconBg: "#383E56",
-    date: "March 2024 - April 2026",
+    date: "October 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained robust web applications using React, Node.js, and MongoDB, contributing to a 10% increase in user engagement and a 15% improvement in load times.",
+      "Collaborated with a team of 6 developers to design, build, and deploy backend services, supporting over 50,000 active users and reducing server downtime by 10%",
+      "Integrated third-party APIs to expand application functionality, which helped increase user retention by 12%",
+      "Participated in code reviews and contributed to improving codebase quality, resulting in a 20% reduction in bugs through consistent application of best practices.",
     ],
   },
   {
-    title: "React Native Developer",
+    title: "React Native Developer(Example, Not Real Experience :) )",
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",

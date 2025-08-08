@@ -36,7 +36,7 @@ const ExperienceCard = ({ experience }) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-pint-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-white-100 text-[14px] pl-1 tracking-wider text-justify"
         >
           {point}
         </li>
@@ -51,11 +51,7 @@ const Experience = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far...</p>
         <p className={styles.sectionHeadText}>Work Experience.</p>
-        Well as a fresher i currently don't have any professional experience but
-        please do checkout my projects that i built using my knowledge in
-        Languages and frameworks mentioned below. <br />
-        But if i were to have any experience in the future the section would
-        look as below.
+        
       </motion.div>
       <div className="mt-20 flex fex-col">
         <VerticalTimeline>

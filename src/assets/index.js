@@ -28,7 +28,7 @@ import solidity from "./tech/Solidity.png";
 import linkedin from "./tech/linkedin.png";
 import resume from "./tech/resume.png";
 
-import starbucks from "./company/starbucks.png";
+import jio from "./company/Jio_Logo.png";
 import tesla from "./company/tesla.png";
 
 import chatup from "./Chatup.png";
@@ -62,7 +62,7 @@ export {
   java,
   mysql,
   solidity,
-  starbucks,
+  jio,
   tesla,
   chatup,
   sociogram,
